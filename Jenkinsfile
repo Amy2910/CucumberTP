@@ -9,8 +9,8 @@ pipeline {
         stage('Get Xray Token') {
             steps {
                 withCredentials([
-                    string(credentialsId: 'XRAY_CLIENT_ID', variable: 'XRAY_ID'),
-                    string(credentialsId: 'XRAY_CLIENT_SECRET', variable: 'XRAY_SECRET')
+                    string(credentialsId: 'AFC9594E0A7F469592C85F5D6BDC6EEB  ', variable: 'XRAY_ID'),
+                    string(credentialsId: 'ae0402b7075192c2a554bde07c9ee9ff424e3ab764a1ac082fda09aa39b370f8', variable: 'XRAY_SECRET')
                 ]) {
                     bat """
                         curl -X POST https://xray.cloud.getxray.app/api/v2/authenticate ^
